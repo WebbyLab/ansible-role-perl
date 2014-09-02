@@ -15,9 +15,13 @@
 
 - name: Update ExtUtils::MakeMaker
   shell: cpanm ExtUtils::MakeMaker
+  register: update_extutils_makemaker
+  changed_when: "'is up to date' not in update_extutils_makemaker.stdout"
 
 - name: Update File::Spec
   shell: cpanm File::Spec
+  register: update_file_spec
+  changed_when: "'is up to date' not in update_file_spec.stdout"
 
 - name: Install Carton
   shell: cpanm --dev Carton
