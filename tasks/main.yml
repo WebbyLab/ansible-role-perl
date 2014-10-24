@@ -24,7 +24,7 @@
   changed_when: "'is up to date' not in update_file_spec.stdout"
 
 - name: Install Carton
-  shell: cpanm --dev Carton
+  shell: cpanm --dev Carton --mirror https://cpan.metacpan.org/
   register: install_carton
   changed_when: "'is up to date' not in install_carton.stdout"
 
