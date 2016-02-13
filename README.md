@@ -14,7 +14,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - webbylab.perl
+         - WebbyLab.perl
 
 License
 -------
