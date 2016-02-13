@@ -1,7 +1,7 @@
 ---
 galaxy_info:
-  author: webbylab
-  description:
+  author: WebbyLab
+  description: Ansible role for Perl environment(Carton, cpanm) setup on ubuntu server
   company: WebbyLab
   license: MIT
   min_ansible_version: 1.5
@@ -9,5 +9,6 @@ galaxy_info:
   - name: Ubuntu
     versions:
     - all
-  categories:
+  galaxy_tags:
   - system
+dependencies: []
